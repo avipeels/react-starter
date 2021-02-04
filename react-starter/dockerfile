@@ -10,7 +10,7 @@ ENV PATH /react-starter/node_modules/.bin:$PATH
 # install app dependencies
 COPY package.json ./
 COPY yarn.lock ./
-RUN yarn
+RUN yarn install --ignore-engines
 
 # add app
 COPY . ./
