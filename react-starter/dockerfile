@@ -11,7 +11,7 @@ ENV PATH /react-starter/react-starter/node_modules/.bin:$PATH
 COPY package.json ./
 COPY yarn.lock ./
 RUN yarn install --ignore-engines
-
+RUN yarn install react-scripts@1.1.0 -g
 # add app
 COPY . .
 EXPOSE 3000
