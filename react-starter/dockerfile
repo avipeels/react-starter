@@ -12,6 +12,8 @@ RUN npm install --silent
 # add app
 COPY . ./
 
+RUN npm run build
+
 EXPOSE 5000
 
 # start app
