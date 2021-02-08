@@ -9,9 +9,9 @@ COPY package.json .
 
 RUN npm install --silent
 
-RUN npm run build
 # add app
 COPY . ./
+RUN npm run build
 
 
 EXPOSE 5000
